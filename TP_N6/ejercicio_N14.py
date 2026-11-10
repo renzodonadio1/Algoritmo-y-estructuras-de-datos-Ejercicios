@@ -115,10 +115,8 @@ def calcular_metros_aem(aem_str):
           total += int(partes[-1])
   return total
 
-
-# ==========================================
 # Resolución de Tareas (Ejercicio 14)
-# ==========================================
+
 if __name__ == "__main__":
   g_casa = crear_grafo_casa()
   
@@ -145,10 +143,7 @@ if __name__ == "__main__":
   )
 
   # Punto d: Camino más corto desde la habitación 1 hasta la sala de estar
-  print(
-      "\n--- d. Camino más corto para cable de red (Habitación 1 -> Sala de"
-      " Estar) ---"
-  )
+  print("\n--- d. Camino más corto para cable de red (Habitación 1 -> Sala de"" Estar) ---")
   camino, metros_red = obtener_camino_dijkstra(
       g_casa, "habitación 1", "sala de estar"
   )
